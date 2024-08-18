@@ -1,83 +1,160 @@
+/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Set a white background and use a clean, modern font */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
+    padding: 0 20px;
 }
 
+/* Header styling with menu bar only (no logo) */
 header {
-    background-color: #007bff;
-    color: #fff;
+    border-bottom: 1px solid #eaeaea;
     padding: 10px 0;
     margin-bottom: 20px;
 }
 
 .logo-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the menu bar */
     align-items: center;
-    max-width: 1000px;
-    margin: auto;
+    flex-wrap: wrap;
 }
 
-.logo-menu h1 {
-    margin-left: 20px;
-}
-
+/* Navigation menu styling */
 nav ul {
     display: flex;
-    list-style: none;
-    margin-right: 20px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center; /* Center the menu */
+    flex: 1; /* Allow menu to take up available space */
+    flex-wrap: nowrap; /* Prevent items from wrapping onto the next line */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin-left: 15px;
+    white-space: nowrap; /* Prevent text wrapping in individual items */
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    color: #007bff;
+    font-weight: 500;
+    font-size: 1em;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #0056b3;
 }
 
-main {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-h2 {
+.hero h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #555;
     margin-bottom: 20px;
-    color: #007bff;
 }
 
-p {
-    margin-bottom: 15px;
+.cta-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Main content styling */
+main {
+    padding: 20px 0;
+}
+
+.services, .about, .contact, .careers {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services h2, .about h1, .contact h1, .careers h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .service-item {
+    flex-basis: 48%;
     margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
 }
 
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Footer styling */
 footer {
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
+    padding: 20px 0;
+    border-top: 1px solid #eaeaea;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .logo-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        justify-content: center; /* Keep menu items centered */
+        flex-wrap: nowrap; /* Ensure the menu doesn't wrap on mobile */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+    }
+
+    nav ul li {
+        margin-left: 10px; /* Reduce space between items on mobile */
+    }
+    
+    .service-item {
+        flex-basis: 100%;
+    }
 }
