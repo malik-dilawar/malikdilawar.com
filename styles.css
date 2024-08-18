@@ -14,30 +14,6 @@ body {
     padding: 0 20px;
 }
 
-/* Dark Mode Styles */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #000000; /* Black background for dark mode */
-        color: #ffffff; /* White text for dark mode */
-    }
-
-    nav ul li a {
-        color: #ffffff; /* White menu links in dark mode */
-    }
-
-    nav ul li a:hover {
-        color: #cccccc; /* Light gray on hover */
-    }
-
-    footer {
-        color: #cccccc; /* Light gray text in footer */
-    }
-
-    .profile-pic {
-        border: 2px solid #ffffff; /* Add a white border to the profile pic in dark mode */
-    }
-}
-
 /* Header styling with logo and menu bar */
 header {
     border-bottom: 1px solid #eaeaea;
@@ -143,7 +119,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     border-top: 1px solid #eaeaea;
-    margin-top: 30px; /* Reduced top margin */
+    margin-top: 30px;
     font-size: 0.9em;
     color: #777;
 }
