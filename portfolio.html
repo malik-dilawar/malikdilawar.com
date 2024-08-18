@@ -4,105 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Malik Dilawar</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .navbar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 0;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        .navbar a {
-            margin: 0 15px;
-            color: #333;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-        .navbar a:hover {
-            color: #007bff;
-        }
-        .container {
-            margin-top: 80px;
-            max-width: 800px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 60px auto;
-        }
-        h2 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        h3 {
-            font-size: 1.5em;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .back-link {
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="cv/Malik_Dilawar_CV.pdf" download>Download CV</a>
-    </div>
-
-    <div class="container">
-        <h2>Portfolio</h2>
-
-        <h3>DH Malik Global</h3>
-        <p><strong>Role:</strong> Co-founder & Chief Operating Officer (COO)<br>
-        <strong>Duration:</strong> August 2024 – Present<br>
-        Overseeing all operational aspects of the business, driving strategic planning, and fostering innovation within our regional markets.</p>
-
-        <h3>Adamjee Life Assurance Co. Ltd</h3>
-        <p><strong>Role:</strong> Group Manager<br>
-        <strong>Duration:</strong> February 2021 – September 2023<br>
-        Led business development efforts, strategic recruitment, and significantly contributed to expanding market share.</p>
-
-        <h3>Jubilee Life Insurance Company Ltd</h3>
-        <p><strong>Role:</strong> Branch Manager<br>
-        <strong>Duration:</strong> July 2020 – February 2021<br>
-        Optimized client services, led a team to exceed performance targets, and enhanced market share.</p>
-
-        <h3>EFU Life Assurance Ltd</h3>
-        <p><strong>Role:</strong> Takaful Unit Manager<br>
-        <strong>Duration:</strong> September 2018 – August 2019<br>
-        Managed operations, led a team, and improved service delivery to clients.</p>
-
-        <div class="back-link">
-            <p><a href="index.html">Back to Home</a></p>
+    <header>
+        <div class="logo-menu">
+            <h1>Malik Dilawar</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+    <main>
+        <section class="portfolio">
+            <h2>Portfolio/Experience</h2>
+            <div class="experience">
+                <h3>DH Malik Global</h3>
+                <p><strong>Co-founder & Chief Operating Officer (COO)</strong> - August 2024 – Present</p>
+                <p>At DH Malik Global, I manage all operational aspects, driving strategic planning, and ensuring our business processes align with the company's overall goals. My role allows me to foster innovation and build strong relationships within our regional markets.</p>
+            </div>
+            <div class="experience">
+                <h3>Adamjee Life Assurance Co. Ltd</h3>
+                <p><strong>Group Manager</strong> - February 2021 – September 2023</p>
+                <p>I led business development efforts, identified new opportunities, and oversaw strategic recruitment to align talent with organizational objectives. My leadership contributed to exceeding targets and expanding market share.</p>
+            </div>
+            <div class="experience">
+                <h3>Jubilee Life Insurance Company Ltd</h3>
+                <p><strong>Branch Manager</strong> - July 2020 – February 2021</p>
+                <p>In this role, I optimized client services and led a dynamic team to exceed performance targets, contributing to enhanced market share.</p>
+            </div>
+            <div class="experience">
+                <h3>EFU Life Assurance Ltd</h3>
+                <p><strong>Takaful Unit Manager</strong> - September 2018 – August 2019</p>
+                <p>I managed day-to-day operations, led a team to enhance business growth, and improved service delivery to clients.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Malik Dilawar</p>
+    </footer>
 </body>
 </html>
